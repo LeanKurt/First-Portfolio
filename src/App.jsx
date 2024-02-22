@@ -7,13 +7,13 @@ function App() {
   return (
     <main>
         <NavBar />
-      <section className='section'>
+      <section className='section1'>
         <LandingSection />
       </section>
-      <section className='section'>
+      <section>
         <Projects />
       </section>
-      <section className='section'>
+      <section>
         <Contact />
       </section>
     </main>
