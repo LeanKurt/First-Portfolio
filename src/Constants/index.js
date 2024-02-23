@@ -1,5 +1,5 @@
 import { facebook, twitter, instagram } from "../assets/icons";
-import { Lean, html, css, javascript, react } from "../assets/images";
+import { Lean, html, css, javascript, react, Hoobank, Temperature,Mousetracker,Form  } from "../assets/images";
 
 export const navLinks = [
     { id: 1, name: 'Home' },
@@ -23,5 +23,12 @@ export const mySkills = [
   { src: css, alt: "css"},
   { src: javascript, alt: "javascript"},
   { src: react, alt: "react"},
+]
+
+export const myProjects = [
+  { src : Hoobank, title: "Hoobank App"},
+  { src: Temperature, title: "Temperature Converter App"},
+  { src: Mousetracker, title: "MouseTracker Website"},
+  { src: Form, title: "Controlled Form"},
 ]
 
