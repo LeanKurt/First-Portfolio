@@ -1,5 +1,5 @@
 import { facebook, twitter, instagram } from "../assets/icons";
-import { Lean, html, css, javascript, react, Hoobank, Temperature,Mousetracker,Form  } from "../assets/images";
+import { Lean, html, css, javascript, react, Hoobank, Temperature, Mousetracker, Form  } from "../assets/images";
 
 export const navLinks = [
     { id: 1, name: 'Home' },

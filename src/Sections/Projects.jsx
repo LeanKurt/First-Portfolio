@@ -1,17 +1,17 @@
 
 import { myProjects } from "../Constants"
+import '../projects.css';
 
 const Projects = () => {
   return (
-    <section>
-      <div className="main-container">
+    <section className="projects-page">
+      <div className="projects-container">
         {myProjects.map((project) => (
-          <div className="image-container">
-            <img src={project.src}
-              alt="my projects"
-              className="img-inside"
-            />
-            <div className="project-title">
+          <div className="card-container">
+            <div className="projects-image">
+              <img src={project.src} alt="my projects" className="img-inside"/>
+            </div>
+            <div className="projects-title">
               <p>{project.title}</p>
             </div>
             <div className="description">

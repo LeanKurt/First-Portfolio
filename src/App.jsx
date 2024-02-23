@@ -10,7 +10,7 @@ function App() {
       <section className='section1'>
         <LandingSection />
       </section>
-      <section>
+      <section className='section2'>
         <Projects />
       </section>
       <section>
