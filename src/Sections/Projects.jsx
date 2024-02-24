@@ -1,5 +1,5 @@
 
-import { myProjects } from "../Constants"
+import { myProjects, logo } from "../Constants"
 import '../projects.css';
 
 const Projects = () => {
@@ -17,6 +17,11 @@ const Projects = () => {
             <div className="description">
               <p>{project.description}</p>
             </div>
+            <div className="github">
+            {logo.map((logos) => (
+              <img src={logos.src} alt="github"  className="github-logo"width={24} height={24}/>
+            ))}
+           </div>
           </div>
         ))}
       </div>

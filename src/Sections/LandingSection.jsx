@@ -15,9 +15,9 @@ const LandingSection = () => {
               </p>
            </div>
            <div className='skill-container'>
-            {mySkills.map((skill) => (
+            {mySkills.map((skill,index) => (
              <div className='icon-container'>
-               <img src={skill.src}  className='myIcon'/>
+               <img src={skill.src} key={index} className='myIcon'/>
              </div>
             ))}
             </div>  

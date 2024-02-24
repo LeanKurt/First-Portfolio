@@ -1,5 +1,5 @@
 import { facebook, twitter, instagram } from "../assets/icons";
-import { Lean, html, css, javascript, react, Hoobank, Temperature, Mousetracker, Form  } from "../assets/images";
+import { Lean, html, css, javascript, react, Hoobank, Temperature, Mousetracker, Form , github } from "../assets/images";
 
 export const navLinks = [
     { id: 1, name: 'Home' },
@@ -29,6 +29,9 @@ export const myProjects = [
   { src : Hoobank, title: "Hoobank App" , description: "Hoobank is a cutting-edge banking website designed to seamlessly integrate financial services, offering users a secure and intuitive platform for managing their finances with ease."},
   { src: Temperature, title: "Temperature Converter App", description: "Introducing our Temperature Converter App, simplifying the process of converting between Celsius, Fahrenheit, and Kelvin with precision and user-friendly functionality."},
   { src: Mousetracker, title: "MouseTracker Website", description: "MouseTracker Website is an innovative platform that allows users to effortlessly monitor and analyze mouse movements."},
-  { src: Form, title: "Controlled Form", description: "ControlledForm is a dynamic application designed to streamline data entry and management processes, ensuring meticulous control and validation of user input for seamless and error-free form submissions."},
+  { src: Form, title: "Controlled Form", description: "Controlled Form is a dynamic application designed to streamline data entry and management processes."},
 ]
 
+export const logo = [{
+  src : github, alt: "github logo"
+}]
