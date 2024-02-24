@@ -17,7 +17,7 @@ const Contact = () => {
     <div className='whole-container'>
       <div className='text-container'>
         <h1 className='my-heading'>Get in Touch</h1>
-        <p className='my-email'>@Leankurtescano@gmail.com</p>
+        <p className='my-email'>awitize78@gmail.com</p>
 
       </div>
       <div className='divider'>
@@ -41,7 +41,7 @@ const Contact = () => {
             
            </div>
            <div className='btn-container'>
-            <button className='my-btn' disabled={!formEmpty()}>Submit</button>
+            <button className='my-btn'>Submit</button>
            </div>
           </div>
         </form>

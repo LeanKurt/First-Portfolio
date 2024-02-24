@@ -5,6 +5,9 @@ import '../projects.css';
 const Projects = () => {
   return (
     <section className="projects-page">
+      <div className="heading-projects">
+       <h1 className="gradient">Featured Projects:</h1>
+       </div>
       <div className="projects-container">
         {myProjects.map((project) => (
           <div className="card-container">
