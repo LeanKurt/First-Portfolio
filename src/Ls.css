@@ -11,6 +11,12 @@ h1{
 
 }
 
+.my-heading {
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .gradient {
     background: linear-gradient(45deg, #ff6ec4, #7873f5);
     -webkit-background-clip: text;
@@ -43,8 +49,9 @@ h1{
 
 .myIcon {
     object-fit: contain;
+    padding: 10px;
+   
 }
-
 .skill-container {
     display: flex;
     justify-content: center;
@@ -61,6 +68,18 @@ h1{
     justify-content: center;
     margin: 10px;
     overflow: hidden;
-    width: 30px;
-    height: 30px;
+    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(150, 150, 150, 0.8); 
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.text-area {
+    color: black;
+    font-weight: 100;
+}
+ 
+.my-email{
+    padding-top: 5px;
 }

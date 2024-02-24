@@ -13,7 +13,7 @@ function App() {
       <section className='section2'>
         <Projects />
       </section>
-      <section>
+      <section className='section3'>
         <Contact />
       </section>
     </main>

@@ -16,6 +16,7 @@
     align-items: center;
 }
 
+
 header {
     position: fixed;
     top: 0;
@@ -85,6 +86,3 @@ p{
     flex-direction: row;
 }
 
-.text-container {
-    color: red;
-}

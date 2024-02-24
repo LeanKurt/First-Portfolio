@@ -40,7 +40,7 @@
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background: linear-gradient(45deg, #ff6ec4, #7873f5);;
 }
 
 input:focus + .slider {
