@@ -37,6 +37,18 @@
     color: white;
 }
 
+.section2-light h1 {
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section2-dark h1 {
+    background: linear-gradient(to right, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 header {
     position: fixed;
     top: 0;
@@ -71,13 +83,17 @@ header .nav-bar ul {
    header .nav-bar ul li {
      font-size: 20px;
      padding: 20px;
-     color: #333;
      display: block;
    }
-   
-   header .nav-bar ul li:hover {
-       background: #333;
-       color: #fff;
+
+    .nav-light .nav-bar ul li:hover {
+        background: linear-gradient(45deg, #FFD700, #FFA500);
+        color: white;
+       transition: 0.4s ease-in;
+    }
+   .nav-dark .nav-bar ul li:hover {
+       background: linear-gradient(45deg, #ff6ec4, #7873f5);
+       color: white;
        transition: 0.4s ease-in;
    }
 
@@ -125,6 +141,17 @@ p{
     color: white;
 }
 
+.section-light h1:nth-child(2){
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section-dark h1:nth-child(2){
+    background: linear-gradient(to right, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .nav-light {
     color: black;
@@ -138,6 +165,9 @@ p{
     
 }
 
+.nav-light nav ul li {
+    color: black;
+}
 .nav-dark nav ul li {
     color: white;
 }
@@ -166,3 +196,13 @@ p{
     color: white;
 }
 
+.section3-light h1{
+    background: linear-gradient(to right, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section3-dark h1{
+    background: linear-gradient(to right, #ff6ec4, #7873f5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

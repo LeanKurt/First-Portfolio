@@ -17,7 +17,7 @@ const Projects = ({theme}) => {
               <img src={project.src} alt="my projects" className="img-inside"/>
             </div>
             <div className="projects-title">
-              <p>{project.title}</p>
+              <p className={theme === "light" ? "title-dark": "title-light"}>{project.title}</p>
             </div>
             <div className="description">
               <p>{project.description}</p>

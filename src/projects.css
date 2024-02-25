@@ -43,13 +43,22 @@
     object-fit: cover;
 }
 
-.projects-title p {
+.title-dark {
   margin: 10px;
   font-weight: bolder;
   background: linear-gradient(to right, #ff6ec4, #7873f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.title-light {
+    margin: 10px;
+  font-weight: bolder;
+  background: linear-gradient(to right, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 .description {
     padding-left: 5px;

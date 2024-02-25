@@ -3,7 +3,7 @@ import { useState } from 'react';
 import '../contact.css'
 
 
-const Contact = () => {
+const Contact = ({theme}) => {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
 
@@ -41,7 +41,7 @@ const Contact = () => {
             
            </div>
            <div className='btn-container'>
-            <button className='my-btn'>Submit</button>
+            <button className={theme === "light" ? "btn-dark" : "btn-light"}>Submit</button>
            </div>
           </div>
         </form>

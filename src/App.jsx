@@ -23,7 +23,7 @@ function App() {
         <Projects  theme={theme}/>
       </section>
       <section className={theme === "light" ? "section3-dark" : "section3-light"}>
-        <Contact/>
+        <Contact theme={theme}/>
       </section>
     </main>
   )
