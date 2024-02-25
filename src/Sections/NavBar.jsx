@@ -5,11 +5,11 @@ import '../App.css';
 
 
 
-const NavBar = () => {
+const NavBar = ({theme, toggleTheme}) => {
   return (
-    <header>
+    <header className={theme === 'light' ? 'nav-dark' : 'nav-light'}>
       <div className='btn-container'>
-      <ToggleButton />
+      <ToggleButton theme={theme} toggleTheme={toggleTheme}/>
       </div>
       <nav className='nav-bar'>
         <ul>
@@ -18,7 +18,6 @@ const NavBar = () => {
           ))}
         </ul>      
       </nav>
-      
    </header>
      
     

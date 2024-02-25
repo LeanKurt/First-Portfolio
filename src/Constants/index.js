@@ -1,5 +1,5 @@
 import { facebook, twitter, instagram } from "../assets/icons";
-import { Lean, html, css, javascript, react, Hoobank, Temperature, Mousetracker, Form , github } from "../assets/images";
+import { Lean, html, css, javascript, react, Hoobank, Temperature, Mousetracker, Form , github, githubdark } from "../assets/images";
 
 export const navLinks = [
     { id: 1, name: 'Home' },
@@ -33,5 +33,7 @@ export const myProjects = [
 ]
 
 export const logo = [{
-  src : github, alt: "github logo"
+  src: github, alt: "github logo",
+  src2: githubdark, alt:"github logo2"
 }]
+

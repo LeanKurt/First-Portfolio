@@ -1,9 +1,11 @@
 
 import "./Styles.css";
-const ToggleButton = () => {
+const ToggleButton = ({theme,toggleTheme}) => {
   return (
     <label className="switch">
     <input
+    checked ={theme === "light"}
+    onChange={toggleTheme}
       type="checkbox"
     />
     <span className="slider round" />

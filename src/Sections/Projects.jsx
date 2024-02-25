@@ -1,8 +1,10 @@
 
 import { myProjects, logo } from "../Constants"
+
 import '../projects.css';
 
-const Projects = () => {
+const Projects = ({theme}) => {
+  const logoSrc = theme === "light" ? logo[0].src2 : logo[0].src;
   return (
     <section className="projects-page">
       <div className="heading-projects">
@@ -20,10 +22,8 @@ const Projects = () => {
             <div className="description">
               <p>{project.description}</p>
             </div>
-            <div className="github">
-            {logo.map((logos) => (
-              <img src={logos.src} alt="github"  className="github-logo"width={24} height={24}/>
-            ))}
+            <div className="github">     
+              <img src={logoSrc} alt="github"  className="github-logo"width={24} height={24}/>
            </div>
           </div>
         ))}

@@ -7,7 +7,8 @@ import Hoobank from './Hoobank.png';
 import Temperature from './Temperatureconverter.png';
 import Mousetracker from './Mousetracker.png';
 import Form from './Controlledform.png';
-import github from './github.png'
+import github from './github.png';
+import githubdark from './githubdark.png';
 
 export{
     Lean,
@@ -19,5 +20,6 @@ export{
     Temperature,
     Mousetracker,
     Form,
-    github
+    github,
+    githubdark
 }

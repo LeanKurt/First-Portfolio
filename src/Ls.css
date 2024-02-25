@@ -68,7 +68,7 @@ h1{
     justify-content: center;
     margin: 10px;
     overflow: hidden;
-    border: 1px solid white;
+    border: 1.5px solid white;
     box-shadow: 0 0 10px rgba(150, 150, 150, 0.8); 
     border-radius: 100%;
     width: 50px;

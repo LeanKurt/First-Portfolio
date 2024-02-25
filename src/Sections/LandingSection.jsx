@@ -2,7 +2,7 @@ import { myProfile } from '../Constants';
 import { mySkills } from '../Constants';
 import '../Ls.css';
 
-const LandingSection = () => {
+const LandingSection = ({theme}) => {
   return (
     <section className='landing-page'>
       <div className='heading-container'>

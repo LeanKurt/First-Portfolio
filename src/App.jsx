@@ -7,18 +7,22 @@ import { useState } from 'react';
 
 
 function App() {
+ const [theme, setTheme] = useState("light");
 
+ const toggleTheme = () => {
+  setTheme(prevTheme => prevTheme === "light" ? "dark" : "light"); 
+ }
 
   return (
     <main>
-        <NavBar/>
-      <section className='section1'>
-        <LandingSection />
+        <NavBar theme={theme} toggleTheme={toggleTheme}/>
+      <section className={theme === "light" ? "section-dark" : "section-light"}>
+        <LandingSection theme={theme}/>
       </section>
-      <section className='section2'>
-        <Projects  />
+      <section className={theme === "light" ? "section2-dark" : "section2-light"}>
+        <Projects  theme={theme}/>
       </section>
-      <section className='section3'>
+      <section className={theme === "light" ? "section3-dark" : "section3-light"}>
         <Contact/>
       </section>
     </main>
