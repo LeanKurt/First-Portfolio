@@ -93,7 +93,7 @@ header .nav-bar ul {
     }
    .nav-dark .nav-bar ul li:hover {
        background: linear-gradient(45deg, #ff6ec4, #7873f5);
-       color: white;
+       color: black;
        transition: 0.4s ease-in;
    }
 
