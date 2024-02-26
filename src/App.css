@@ -206,3 +206,8 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.section3-dark p:nth-last-child(2) {
+     color: red;
+}
+

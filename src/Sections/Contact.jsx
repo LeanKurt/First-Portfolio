@@ -6,11 +6,16 @@ import '../contact.css'
 const Contact = ({theme}) => {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
-
+  
+  const TextInvalid = () => {
+    return (
+      <p className='error'>Please enter more words</p>
+    );
+  }
   const formEmpty = () => {
     return (
       name && text
-    )
+    );
   }
   return (
    <section className='contacts-page'>
@@ -38,8 +43,10 @@ const Contact = ({theme}) => {
             rows={8} 
             cols={50} 
             placeholder="Type something here..."></textarea>
-            
            </div>
+           {text.length < 1 ? (
+             <TextInvalid />
+           ) : null}
            <div className='btn-container'>
             <button className={theme === "light" ? "btn-dark" : "btn-light"}>Submit</button>
            </div>
