@@ -30,7 +30,7 @@ const Contact = ({theme}) => {
           <div className='form-container'>
            <div className='field'>
             <label htmlFor='text'>Your Name:</label>
-            <input type='text'  value={name}id='text' name='text' onChange={e => setName(e.target.value)}></input>
+            <input type='text'  value={name}id='text' name='text' onChange={e => setName(e.target.value)} required></input>
            </div>
            <div className='field'>
             <label htmlFor='email'>Your Email:</label>
@@ -42,7 +42,7 @@ const Contact = ({theme}) => {
             <textarea value={text} onChange={e => setText(e.target.value)}
             rows={8} 
             cols={50} 
-            placeholder="Type something here..."></textarea>
+            placeholder="Type something here..." required></textarea>
            </div>
            {text.length < 1 ? (
              <TextInvalid />
