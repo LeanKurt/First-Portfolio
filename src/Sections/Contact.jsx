@@ -9,7 +9,7 @@ const Contact = ({theme}) => {
   
   const TextInvalid = () => {
     return (
-      <p className='error'>Please enter more words</p>
+      <p className='error'>*Please enter more words</p>
     );
   }
   const formEmpty = () => {
