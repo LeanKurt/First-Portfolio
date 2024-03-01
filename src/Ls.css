@@ -35,8 +35,38 @@ h1{
     overflow: hidden;
     display: flex;
     justify-content: center;
-    border-radius: 100%;
+    border-radius: 5rem 9rem 7rem 7rem;
+    animation: blob-animation 4s infinite alternate ease-in-out;
+
 }
+
+.image-containerdark {
+    margin-left: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border-radius: 5rem 9rem 7rem 7rem;
+    animation: blob-animation 4s infinite alternate ease-in-out;
+    box-shadow: 0 0 10px #ff6ec4, 0 0 20px #7873f5;
+    border: 1px solid;
+
+}
+
+@keyframes blob-animation {
+    0% {
+        border-top-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+    30% {
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem; 
+    }31% {
+        border-top-left-radius: 9rem;
+        border-bottom-right-radius: 9rem;
+    } 
+
+
+    }
 .frontend {
     width: 30px;
     height: 30px;

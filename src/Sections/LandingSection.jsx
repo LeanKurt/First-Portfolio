@@ -23,7 +23,7 @@ const LandingSection = ({theme}) => {
             </div>  
         </div>
         {myProfile.map((image) => (
-           <div className='image-container'>
+           <div className={theme === "light" ? "image-containerdark" : "image-container"}>
           <img src={image.src}
           alt='my profile'  className='myImage'width={260} height={250}/>
           </div>
