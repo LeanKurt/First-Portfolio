@@ -1,6 +1,7 @@
 import React from 'react'
 import { navLinks } from '../Constants';
 import ToggleButton from '../Components/ToggleButton';
+import { BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import '../App.css';
 
 
@@ -14,7 +15,9 @@ const NavBar = ({theme, toggleTheme}) => {
       <nav className='nav-bar'>
         <ul>
           {navLinks.map((nav) => (
-            <li key={nav.id}>{nav.name}</li>
+            <Router>
+            <li key={nav.id}><Link to={nav.path}>{nav.name}</Link></li>
+            </Router>
           ))}
         </ul>      
       </nav>
