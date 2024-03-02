@@ -4,6 +4,7 @@ import Projects from './Sections/Projects';
 import Contact from './Sections/Contact';
 import './App.css'
 import { useState } from 'react';
+import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 
 function App() {
@@ -15,18 +16,19 @@ function App() {
 
   return (
     <main>
-        <NavBar theme={theme} toggleTheme={toggleTheme}/>
-      <section className={theme === "light" ? "section-dark" : "section-light"}>
-        <LandingSection theme={theme}/>
-      </section>
-      <section className={theme === "light" ? "section2-dark" : "section2-light"}>
-        <Projects  theme={theme}/>
-      </section>
-      <section className={theme === "light" ? "section3-dark" : "section3-light"}>
-        <Contact theme={theme}/>
-      </section>
-    </main>
+    <NavBar theme={theme} toggleTheme={toggleTheme}/>
+    <section id="landing-section" className={theme === "light" ? "section-dark" : "section-light"}>
+      <LandingSection theme={theme}/>
+    </section>
+    <section id="projects-section" className={theme === "light" ? "section2-dark" : "section2-light"}>
+      <Projects  theme={theme}/>
+    </section>
+    <section id="contact-section" className={theme === "light" ? "section3-dark" : "section3-light"}>
+      <Contact theme={theme}/>
+    </section>
+  </main>
   )
 }
+
 
 export default App

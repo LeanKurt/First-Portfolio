@@ -5,6 +5,8 @@ import '../projects.css';
 
 const Projects = ({theme}) => {
   const logoSrc = theme === "light" ? logo[0].src2 : logo[0].src;
+
+
   return (
     <section className="projects-page">
       <div className="heading-projects">

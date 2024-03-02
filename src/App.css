@@ -96,7 +96,23 @@ header .nav-bar ul {
        color: black;
        transition: 0.4s ease-in;
    }
+    .nav-light a {
+        text-decoration: none;
+        color: black;
+    }
 
+    .nav-dark a {
+        color: white;
+    }
+   .nav-light .nav-bar ul a:hover {
+    color: white;
+   transition: 0.4s ease-in;
+}
+
+.nav-dark .nav-bar ul a:hover {
+    color: black;
+   transition: 0.4s ease-in;
+}
 .landing-container {
     display: flex;
     justify-content: center;
