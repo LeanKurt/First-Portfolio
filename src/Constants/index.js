@@ -1,11 +1,10 @@
 import { facebook, twitter, instagram } from "../assets/icons";
 import { Lean, html, css, javascript, react, Hoobank, Temperature, Mousetracker, Form , github, githubdark } from "../assets/images";
-
 export const navLinks = [
-    { id: 1, name: 'Home' },
-    { id: 2, name: 'About' },
-    { id: 3, name: 'Projects' },
-    { id: 4, name: 'Contacts' }
+    { id: 1, name: 'Home' , path: '/'},
+    { id: 2, name: 'About' , path: '/about'},
+    { id: 3, name: 'Projects', path: '/projects' },
+    { id: 4, name: 'Contacts',path: '/contacts' }
   ];
 
   export const socialMedia = [
